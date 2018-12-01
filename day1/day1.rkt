@@ -9,7 +9,6 @@
 (define (loop-freqs seen-set acc)
   (loop-freqs-helper in seen-set acc))
 
-
 (define (loop-freqs-helper freqs seen-set acc)
   (let ([new-acc (+ acc (first freqs))])
     (if (set-member? seen-set new-acc)
