@@ -1,7 +1,6 @@
 #lang racket
 
 (require racket/set)
-(require data/queue)
 
 (define in (map string->number (string-split (port->string (open-input-file "input")))))
 
